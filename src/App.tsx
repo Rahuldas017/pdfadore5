@@ -89,4 +89,5 @@ const App = () => (
     </div>
   </ErrorBoundary>
 );
+
 export default App;
