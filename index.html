@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pdfadore.com | The PDF Toolkit You'll Adore</title>
+    <meta name="description" content="The only PDF toolkit you'll ever need. Merge, split, compress, convert, rotate, unlock, and watermark PDFs with ease. Secure, reliable, and completely free.">
+    <meta name="keywords" content="PDF, PDF tools, merge PDF, split PDF, compress PDF, convert PDF, PDF to Word, PDF to JPG, sign PDF, edit PDF, free PDF tools, online PDF editor">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.pdfadore.com/">
+    <meta property="og:title" content="Pdfadore.com | The PDF Toolkit You'll Adore">
+    <meta property="og:description" content="The only PDF toolkit you'll ever need. Merge, split, compress, convert, rotate, unlock, and watermark PDFs with ease. Secure, reliable, and completely free.">
+    <meta property="og:image" content="https://www.pdfadore.com/social-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.pdfadore.com/">
+    <meta property="twitter:title" content="Pdfadore.com | The PDF Toolkit You'll Adore">
+    <meta property="twitter:description" content="The only PDF toolkit you'll ever need. Merge, split, compress, convert, rotate, unlock, and watermark PDFs with ease. Secure, reliable, and completely free.">
+    <meta property="twitter:image" content="https://www.pdfadore.com/social-preview.png">
+
+    <link rel="canonical" href="https://www.pdfadore.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // This sets up the dark mode based on user's OS preference if no manual override is set.
+      // It's placed in the head to prevent a flash of unstyled content (FOUC).
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Lora', 'serif'],
+              display: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              paper: '#fdfaf4',
+              primary: {
+                '50': '#eef6ff',
+                '100': '#d8eaff',
+                '200': '#badcff',
+                '300': '#8cc2ff',
+                '400': '#57a0ff',
+                '500': '#2e7eff',
+                '600': '#0d5bff',
+                '700': '#0047e0',
+                '800': '#003ab7',
+                '900': '#003194',
+                '950': '#001c56'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1e9da;
+        }
+         .dark ::-webkit-scrollbar-track {
+            background: #2a2a2a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c9c1b3;
+            border-radius: 2px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #555;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b1a99d;
+        }
+        .dark ::-webkit-scrollbar-thumb:hover {
+            background: #666;
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.7.0",
+    "pdfjs-dist": "https://esm.sh/pdfjs-dist@4.4.168",
+    "react-icons/": "https://esm.sh/react-icons@^5.5.0/",
+    "pdf-lib": "https://esm.sh/pdf-lib@^1.17.1",
+    "jszip": "https://esm.sh/jszip@^3.10.1",
+    "react-signature-canvas": "https://esm.sh/react-signature-canvas@^1.0.6",
+    "gray-matter": "https://esm.sh/gray-matter@^4.0.3",
+    "marked": "https://esm.sh/marked@^13.0.0",
+    "chart.js": "https://esm.sh/chart.js@^4.4.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.10.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-paper dark:bg-slate-900 text-slate-800 dark:text-slate-200 h-full font-sans">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
